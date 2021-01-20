@@ -84,6 +84,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *   validate: true
  * @endcode
  *
+ * @see \Drupal\migrate\Plugin\migrate\destination\Entity
  * @see \Drupal\migrate\Plugin\migrate\destination\EntityRevision
  */
 class EntityContentBase extends Entity implements HighestIdInterface, MigrateValidatableEntityInterface {
@@ -318,8 +319,6 @@ class EntityContentBase extends Entity implements HighestIdInterface, MigrateVal
           $values = $default_value;
         }
         else {
-          // Otherwise, ask the field type to generate a sample value.
-          $field_type = $field_definition->getType();
           /** @var \Drupal\Core\Field\FieldItemInterface $field_type_class */
           $field_type_class = $this->fieldTypeManager
             ->getPluginClass($field_definition->getType());
