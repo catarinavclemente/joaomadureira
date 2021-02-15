@@ -1,0 +1,22 @@
+uuid: 464b8dd2-e838-418f-8a92-d525a7ea176d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - joao
+_core:
+  default_config_hash: XMsRP1YhWAcorbrFWZglMYJ_SgWHyF3fyCh5vDXaUN4
+id: joao_breadcrumbs
+theme: joao
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
