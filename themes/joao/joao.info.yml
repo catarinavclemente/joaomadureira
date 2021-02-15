@@ -1,0 +1,25 @@
+name: João
+type: theme
+description: This is a sub theme of Olivero
+core: 8.x
+core_version_requirement: ^8 || ^9
+# Defines the base theme
+base theme: olivero
+# Defines libraries group in which we can add css/js.
+libraries:
+  - joao/global-styling
+# Regions
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  hero: 'Hero (full width)'
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  social: Social Bar
+  content_above: Content Above
+  content: Content
+  sidebar: 'Sidebar'
+  content_below: 'Content Below (Flex Layout)'
+  footer_top: 'Footer Top (Flex Layout)'
+  footer_bottom: 'Footer Bottom'
