@@ -2,6 +2,8 @@ uuid: c0a90b47-ffd2-4ac2-b4c9-797ba90f7015
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - joao
 _core:
@@ -16,5 +18,9 @@ settings:
   id: page_title_block
   label: 'Page title'
   provider: core
-  label_display: '0'
-visibility: {  }
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/1
+    negate: true
